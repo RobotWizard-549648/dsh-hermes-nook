@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hermes Nook",
+    "description": "A standalone panel for chatting directly with the Hermes Agent from DeepSeek Harness (Hermes Nook): native Hermes sessions, streaming replies and file attachments, without the Harness model. Works with WSL, native Hermes, or a remote gateway."
+  }
+}

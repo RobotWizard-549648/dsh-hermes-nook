@@ -1,0 +1,18 @@
+# dsh-hermes-nook bundle patch
+# Inserts the Host row; the browser half rides this package's `dsh.client` manifest.
+# WSL settings are intentionally blank: the Host auto-detects the distro/user/home
+# that owns ~/.hermes. Native Windows Hermes and remote gateways need no WSL config.
+- insert:
+    - id: hermes-nook
+      name: 'dsh-hermes-nook'
+      config:
+        endpoint: 'http://127.0.0.1:8642'
+        wslDistro: ''
+        wslUser: ''
+        wslHome: ''
+        hermesRuntime: auto
+        timeoutMs: 900000
+        model: ''
+        autoApproveTools: true
+        activityDisplay: compact
+        quickPrompts: []

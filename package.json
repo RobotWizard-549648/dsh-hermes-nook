@@ -1,0 +1,59 @@
+{
+  "name": "dsh-hermes-nook",
+  "version": "0.3.0",
+  "description": "Hermes Nook: a standalone Hermes Agent chat panel for DeepSeek Harness with direct Runs/SSE chat, persistent Hermes sessions and file attachments. Works with WSL2, native Hermes, or a remote gateway.",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "hermes",
+    "hermes-agent",
+    "hermes-nook",
+    "plugin",
+    "chat"
+  ],
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --check index.js && node --check client.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    },
+    "engines": {
+      "dsh": ">=0.2.0-0"
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ]
+}

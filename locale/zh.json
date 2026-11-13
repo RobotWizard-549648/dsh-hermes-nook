@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Hermes Nook",
+    "description": "在 DeepSeek Harness 中直接与 Hermes Agent 对话的独立面板（Hermes Nook）：原生会话历史、流式输出与文件附件，不经过 DSH 模型。支持 WSL、本机原生 Hermes 与远程 gateway。"
+  }
+}
