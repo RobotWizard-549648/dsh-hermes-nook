@@ -3,6 +3,15 @@
   "version": "0.3.0",
   "description": "Hermes Nook: a standalone Hermes Agent chat panel for DeepSeek Harness with direct Runs/SSE chat, persistent Hermes sessions and file attachments. Works with WSL2, native Hermes, or a remote gateway.",
   "license": "MIT",
+  "author": "RobotWizard-549648",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobotWizard-549648/dsh-hermes-nook.git"
+  },
+  "homepage": "https://github.com/RobotWizard-549648/dsh-hermes-nook#readme",
+  "bugs": {
+    "url": "https://github.com/RobotWizard-549648/dsh-hermes-nook/issues"
+  },
   "keywords": [
     "deepseek-harness",
     "dsh",
